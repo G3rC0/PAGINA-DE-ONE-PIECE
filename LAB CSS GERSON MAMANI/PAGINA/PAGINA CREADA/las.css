@@ -1,0 +1,125 @@
+body {
+    margin: 0;
+    font-family: Arial, sans-serif;
+}
+
+.cabecera {
+    background-color: #000066;
+    color: white;
+    text-align: center;
+    padding: 10px 0;
+    background: skyblue url(../BANNERS/banop.jpg);
+}
+
+.menu-superior {
+    background-color: #af1212;
+    text-align: center;
+    padding: 10px 0;
+}
+.boton {
+    display: inline-block;
+    margin: 5px;
+    padding: 10px 15px;
+    background: linear-gradient(to right, #239220, #036410);
+    color: rgb(0, 0, 0);
+    text-decoration: none;
+    border-radius: 5px;
+    font-weight: bold;
+    transition: all 0.2s ease;
+}
+
+.boton:hover {
+    background: linear-gradient(to right, #fff674, #eaee0b);
+}
+
+.boton:active {
+    background: linear-gradient(to right, #47b5ff, #0d72c4);
+    color: white;
+    transform: scale(0.96);
+}
+
+.contenedor {
+    display: flex;
+    min-height: 500px;
+}
+
+.menu-izq, .menu-der {
+    width: 20%;
+    padding: 10px;
+    text-align: center;
+    background-image: url(../BANNERS/bannerder.jpg);
+    background-size: cover;     
+    background-position: center; 
+    background-repeat: no-repeat;
+}
+
+.menu-izq h3, .menu-der h3 {
+    color: darkgreen;
+}
+
+.menu-izq .boton, .menu-der .boton {
+    display: block;
+    width: 80%;
+    margin: 10px auto;
+    background: transparent; /* Fondo transparente */
+    border: 2px solid #000;        /* Línea alrededor del botón (puedes cambiar el color) */
+    color: #000;                   /* Color del texto */
+    padding: 10px 20px;            /* Espaciado interno */
+    border-radius: 5px;            /* Bordes redondeados (opcional) */
+    cursor: pointer;              /* Cambia el cursor al pasar sobre el botón */
+    font-size: 16px; 
+}
+
+.menu-izq .boton:hover, .menu-der .boton:hover {
+    background: rgba(0, 0, 0, 0.08);
+}
+
+.menu-izq .boton:active, .menu-der .boton:active {
+    background: rgba(0, 0, 0, 0.10);
+    color: black;
+    transform: scale(0.96);
+}
+
+.contenido {
+    flex: 1;
+    background: #000 url(../BANNERS/thousandsunny.jpg);
+    text-align: center;
+    padding: 20px;
+    font-size: 18px;
+    background-size: cover;     
+    background-position: center; 
+    background-repeat: no-repeat;
+}
+.pie {
+    background-color: #C2B280;
+    color: white;
+    text-align: center;
+    padding: 20px 10px;
+    font-weight: bold;
+}
+
+.logos-footer {
+    display: flex;
+    justify-content: center;
+    gap: 40px;
+    margin-top: 10px;
+    flex-wrap: wrap;
+}
+
+.logos-footer div {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    max-width: 150px;
+}
+
+.logo-pie {
+    width: 40px;
+    height: 40px;
+    object-fit: contain;
+    transition: transform 0.3s;
+}
+
+.logo-pie:hover {
+    transform: scale(1.2);
+}
